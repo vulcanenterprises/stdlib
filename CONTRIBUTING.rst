@@ -1,8 +1,6 @@
-###########################
-Contributing to SRE Library
-###########################
-
-
+################################
+Contributing to Standard Library
+################################
 
 Fork Process
 ------------
@@ -23,7 +21,7 @@ To check your git remotes::
 To add a new remote::
 
     $ git remote add <NAME> <URL>
-    $ git remote add upstream git@git.corp.adobe.com:analytics-techops/sre-libs.git
+    $ git remote add upstream git@github.com:vulcanenterprises/stdlib.git
 
 Pull Request Process
 ^^^^^^^^^^^^^^^^^^^^
@@ -86,7 +84,7 @@ Install::
 
     pyenv install 3.7.0
 
-Create your sre-lib virtual environment::
+Create your stdlib virtual environment::
 
     pyenv virtualenv 3.7.0 stdlib
 
@@ -106,7 +104,7 @@ Install the projects requirements via pip::
     pip3 install -U wheel
     pip3 install -r requirements
 
-Finally install sre-libs in development mode from the root sre-libs::
+Finally install stdlib in development mode from the root stdlib::
 
     $ cd stdlib
     pip3 install -e .
