@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>stdlib.matrices &#8212; stdlib 0.0.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for stdlib.matrices</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">matrices.py</span>
+<span class="sd">=========================================================</span>
+<span class="sd">The matrices.py module for python stdlib</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">stdlib.utils.inn</span> <span class="k">import</span> <span class="n">In</span>
+
+
+<div class="viewcode-block" id="Matrices"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices">[docs]</a><span class="k">class</span> <span class="nc">Matrices</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">matrix_one_in</span><span class="p">:</span> <span class="n">In</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">matrix_two_in</span><span class="p">:</span> <span class="n">In</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">matrix_one_str</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">matrix_two_str</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_two_c</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_type</span> <span class="o">=</span> <span class="s1">&#39;non&#39;</span>
+
+        <span class="k">if</span> <span class="n">matrix_one_str</span> <span class="ow">and</span> <span class="n">matrix_two_str</span><span class="p">:</span>
+            <span class="n">matrix_one_in</span> <span class="o">=</span> <span class="n">In</span><span class="p">(</span><span class="n">matrix_one_str</span><span class="p">)</span>
+            <span class="n">matrix_two_in</span> <span class="o">=</span> <span class="n">In</span><span class="p">(</span><span class="n">matrix_two_str</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">matrix_one_in</span> <span class="ow">and</span> <span class="n">matrix_two_in</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span> <span class="o">=</span> <span class="n">matrix_one_in</span><span class="o">.</span><span class="n">read_int</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span> <span class="o">=</span> <span class="n">matrix_one_in</span><span class="o">.</span><span class="n">read_int</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">)]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">):</span>
+                        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span><span class="p">):</span>
+                            <span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matrix_one_in</span><span class="o">.</span><span class="n">read_string</span><span class="p">()))</span>
+                <span class="k">except</span> <span class="p">(</span><span class="ne">IndexError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">e</span><span class="p">(</span><span class="s2">&quot;Invalid input from Matrix Constructor&quot;</span><span class="p">)</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span> <span class="o">=</span> <span class="n">matrix_two_in</span><span class="o">.</span><span class="n">read_int</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_two_c</span> <span class="o">=</span> <span class="n">matrix_two_in</span><span class="o">.</span><span class="n">read_int</span><span class="p">()</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span><span class="p">)]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span><span class="p">):</span>
+                        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_two_c</span><span class="p">):</span>
+                            <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">matrix_two_in</span><span class="o">.</span><span class="n">read_string</span><span class="p">()))</span>
+                <span class="k">except</span> <span class="p">(</span><span class="ne">IndexError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">e</span><span class="p">(</span><span class="s2">&quot;Invalid input from Matrix Constructor&quot;</span><span class="p">)</span>
+
+            <span class="k">except</span> <span class="p">(</span><span class="ne">IndexError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">e</span><span class="p">(</span><span class="s2">&quot;invalid input from Matrix constructor&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__validate_matrix_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">        :param type:</span>
+<span class="sd">        :return:</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;addition&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_two_c</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;For addition your matrices must have the same dimensions&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;dot-multiply&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_two_r</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Dot multiplying requires the  # of columns in matrix A to be the same as the # of &quot;</span>
+                                 <span class="s2">&quot;rows in matrix B&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Matrices.addition"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices.addition">[docs]</a>    <span class="k">def</span> <span class="nf">addition</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__validate_matrix_array</span><span class="p">(</span><span class="s1">&#39;addition&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span><span class="p">[</span><span class="n">r</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span><span class="p">[</span><span class="n">r</span><span class="p">][</span><span class="n">c</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="Matrices.dot_multiply"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices.dot_multiply">[docs]</a>    <span class="k">def</span> <span class="nf">dot_multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__validate_matrix_array</span><span class="p">(</span><span class="s1">&#39;dot-multiply&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">):</span>
+            <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_r</span><span class="p">):</span>
+                <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span><span class="p">):</span>
+                    <span class="n">col</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">c</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span><span class="p">[</span><span class="n">c</span><span class="p">][</span><span class="n">r</span><span class="p">]</span>
+
+                    <span class="k">if</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_one_c</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span><span class="p">[</span><span class="n">row</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+                        <span class="k">continue</span></div>
+
+<div class="viewcode-block" id="Matrices.m_one"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices.m_one">[docs]</a>    <span class="k">def</span> <span class="nf">m_one</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_one</span></div>
+
+<div class="viewcode-block" id="Matrices.m_two"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices.m_two">[docs]</a>    <span class="k">def</span> <span class="nf">m_two</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_two</span></div>
+
+<div class="viewcode-block" id="Matrices.m_result"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.Matrices.m_result">[docs]</a>    <span class="k">def</span> <span class="nf">m_result</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span></div>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">matrix</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_m_result</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">)):</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s1">&#39;| &#39;</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">row</span><span class="p">])):</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">&#39;</span><span class="si">{0:7}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span> <span class="k">if</span> <span class="n">matrix</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">is_integer</span><span class="p">()</span> <span class="k">else</span> <span class="n">matrix</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">])</span>
+
+            <span class="n">s</span> <span class="o">+=</span> <span class="s1">&#39;|</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+        <span class="k">return</span> <span class="n">s</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../stdlib.html#stdlib.matrices.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="n">dirpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="c1"># inn_one = In(&#39;{0}/tests/simple_matrix_one_add.txt&#39;.format(dirpath))</span>
+    <span class="c1"># inn_two = In(&#39;{0}/tests/simple_matrix_two_add.txt&#39;.format(dirpath))</span>
+    <span class="c1"># matrix = Matrices(inn_one, inn_two)</span>
+    <span class="c1"># matrix.addition()</span>
+    <span class="c1"># print(matrix)</span>
+
+    <span class="n">inn_one</span> <span class="o">=</span> <span class="n">In</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1">/tests/matrix_one_dot_mult.txt&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dirpath</span><span class="p">))</span>
+    <span class="n">inn_two</span> <span class="o">=</span> <span class="n">In</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{0}</span><span class="s1">/tests/matrix_two_dot_mult.txt&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dirpath</span><span class="p">))</span>
+    <span class="n">mat</span> <span class="o">=</span> <span class="n">Matrices</span><span class="p">(</span><span class="n">inn_two</span><span class="p">,</span> <span class="n">inn_one</span><span class="p">)</span>
+    <span class="n">mat</span><span class="o">.</span><span class="n">dot_multiply</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">stdlib</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../stdlib.html">stdlib package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">stdlib</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jacob Longhurst <jacoblonghurst@gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

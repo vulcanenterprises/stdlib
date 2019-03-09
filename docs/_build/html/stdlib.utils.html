@@ -1,0 +1,487 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>stdlib.utils package &#8212; stdlib 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stdlib" href="modules.html" />
+    <link rel="prev" title="stdlib.stdlib package" href="stdlib.stdlib.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="stdlib-utils-package">
+<h1>stdlib.utils package<a class="headerlink" href="#stdlib-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-stdlib.utils.arrayIO">
+<span id="stdlib-utils-arrayio-module"></span><h2>stdlib.utils.arrayIO module<a class="headerlink" href="#module-stdlib.utils.arrayIO" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="arrayio-py">
+<h3>arrayIO.py<a class="headerlink" href="#arrayio-py" title="Permalink to this headline">¶</a></h3>
+<p>The arrayIO.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.arrayIO.ArrayIO">
+<em class="property">class </em><code class="descclassname">stdlib.utils.arrayIO.</code><code class="descname">ArrayIO</code><a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Standard array IO providing functions to read and print 1d and 2d array from a standard input.</p>
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.print_1d">
+<em class="property">classmethod </em><code class="descname">print_1d</code><span class="sig-paren">(</span><em>a: List[float]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.print_1d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.print_1d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.print_2d">
+<em class="property">classmethod </em><code class="descname">print_2d</code><span class="sig-paren">(</span><em>a: List[List[float]]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.print_2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.print_2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_bool_1d">
+<em class="property">classmethod </em><code class="descname">read_bool_1d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[bool]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_bool_1d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_bool_1d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_bool_2d">
+<em class="property">classmethod </em><code class="descname">read_bool_2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[List[bool]]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_bool_2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_bool_2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_double_1d">
+<em class="property">classmethod </em><code class="descname">read_double_1d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[float]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_double_1d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_double_1d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_float_2d">
+<em class="property">classmethod </em><code class="descname">read_float_2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[List[float]]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_float_2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_float_2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_int_1d">
+<em class="property">classmethod </em><code class="descname">read_int_1d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[int]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_int_1d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_int_1d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.arrayIO.ArrayIO.read_int_2d">
+<em class="property">classmethod </em><code class="descname">read_int_2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[List[int]]<a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#ArrayIO.read_int_2d"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.ArrayIO.read_int_2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="stdlib.utils.arrayIO.main">
+<code class="descclassname">stdlib.utils.arrayIO.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/arrayIO.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.arrayIO.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.fft">
+<span id="stdlib-utils-fft-module"></span><h2>stdlib.utils.fft module<a class="headerlink" href="#module-stdlib.utils.fft" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fft-py">
+<h3>fft.py<a class="headerlink" href="#fft-py" title="Permalink to this headline">¶</a></h3>
+<p>The fft.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.fft.FFT">
+<em class="property">class </em><code class="descclassname">stdlib.utils.fft.</code><code class="descname">FFT</code><a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="stdlib.utils.fft.FFT.cir_convolve">
+<code class="descname">cir_convolve</code><span class="sig-paren">(</span><em>x: List[stdlib.complex.Complex], y: List[stdlib.complex.Complex]</em><span class="sig-paren">)</span> &#x2192; Union[list, List[Union[range, Any]]]<a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT.cir_convolve"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT.cir_convolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the circular convolution of the two specified complex arrays
+:param x: one Complex array
+:param y: the other Complex array
+:return: the circular convolution of the two specified complex arrays</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.fft.FFT.fft">
+<code class="descname">fft</code><span class="sig-paren">(</span><em>x: List[stdlib.complex.Complex]</em><span class="sig-paren">)</span> &#x2192; Union[list, List[Union[range, Any]]]<a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT.fft"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT.fft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the FFT of the specified complex array.
+:param x: the Complex array
+:return: the FFT of the complex array <a class="reference external" href="mailto:{&#37;&#52;&#48;param">{<span>&#64;</span>param</a> x}</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.fft.FFT.ifft">
+<code class="descname">ifft</code><span class="sig-paren">(</span><em>x: List[stdlib.complex.Complex]</em><span class="sig-paren">)</span> &#x2192; Union[list, List[Union[range, Any]]]<a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT.ifft"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT.ifft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the inverse FFT of the specified complex array.
+:param x: the Complex array
+:return: the inverse FFT of the specified complex array.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.fft.FFT.lin_convolve">
+<code class="descname">lin_convolve</code><span class="sig-paren">(</span><em>x: List[stdlib.complex.Complex], y: List[stdlib.complex.Complex]</em><span class="sig-paren">)</span> &#x2192; List[stdlib.complex.Complex]<a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT.lin_convolve"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT.lin_convolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the linear convolution of the two specified complex arrays.
+:param x: one Complex array
+:param y: the other Complex array
+:return: the linear convolution of the two specified complex arrays</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.fft.FFT.main">
+<code class="descname">main</code><span class="sig-paren">(</span><em>size: int</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/fft.html#FFT.main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.fft.FFT.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.inn">
+<span id="stdlib-utils-inn-module"></span><h2>stdlib.utils.inn module<a class="headerlink" href="#module-stdlib.utils.inn" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="inn-py">
+<h3>inn.py<a class="headerlink" href="#inn-py" title="Permalink to this headline">¶</a></h3>
+<p>The inn.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.inn.In">
+<em class="property">class </em><code class="descclassname">stdlib.utils.inn.</code><code class="descname">In</code><span class="sig-paren">(</span><em>file: str = None</em>, <em>url: str = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/inn.html#In"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="stdlib.utils.inn.In.exists">
+<code class="descname">exists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/inn.html#In.exists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.exists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.has_next_line">
+<code class="descname">has_next_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.has_next_line"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.has_next_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_all">
+<code class="descname">read_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_all_floats">
+<code class="descname">read_all_floats</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[float]<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_all_floats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_all_floats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_all_ints">
+<code class="descname">read_all_ints</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[int]<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_all_ints"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_all_ints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_all_lines">
+<code class="descname">read_all_lines</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_all_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_all_lines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_all_strings">
+<code class="descname">read_all_strings</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List[str]<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_all_strings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_all_strings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_bool">
+<code class="descname">read_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_bool"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_float">
+<code class="descname">read_float</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_float"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_float" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_int">
+<code class="descname">read_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_int"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_line">
+<code class="descname">read_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_line"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.inn.In.read_string">
+<code class="descname">read_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="_modules/stdlib/utils/inn.html#In.read_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.In.read_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="stdlib.utils.inn.main">
+<code class="descclassname">stdlib.utils.inn.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/inn.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.inn.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.particle">
+<span id="stdlib-utils-particle-module"></span><h2>stdlib.utils.particle module<a class="headerlink" href="#module-stdlib.utils.particle" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="particle-py">
+<h3>particle.py<a class="headerlink" href="#particle-py" title="Permalink to this headline">¶</a></h3>
+<p>The particle.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.particle.Color">
+<em class="property">class </em><code class="descclassname">stdlib.utils.particle.</code><code class="descname">Color</code><a class="reference internal" href="_modules/stdlib/utils/particle.html#Color"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.particle.Color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="stdlib.utils.particle.Color.BLACK">
+<code class="descname">BLACK</code><em class="property"> = '000000'</em><a class="headerlink" href="#stdlib.utils.particle.Color.BLACK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="stdlib.utils.particle.Color.RED">
+<code class="descname">RED</code><em class="property"> = 'FF0000'</em><a class="headerlink" href="#stdlib.utils.particle.Color.RED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="stdlib.utils.particle.Particle">
+<em class="property">class </em><code class="descclassname">stdlib.utils.particle.</code><code class="descname">Particle</code><span class="sig-paren">(</span><em>rx: float = None</em>, <em>ry: float = None</em>, <em>vx: float = None</em>, <em>vy: float = None</em>, <em>radius: float = None</em>, <em>mass: float = None</em>, <em>color: stdlib.utils.particle.Color = None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/particle.html#Particle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.particle.Particle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="stdlib.utils.particle.Particle.draw">
+<code class="descname">draw</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/utils/particle.html#Particle.draw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.particle.Particle.draw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.particle.Particle.move">
+<code class="descname">move</code><span class="sig-paren">(</span><em>dt: float</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/utils/particle.html#Particle.move"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.particle.Particle.move" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.randomwordgenerator">
+<span id="stdlib-utils-randomwordgenerator-module"></span><h2>stdlib.utils.randomwordgenerator module<a class="headerlink" href="#module-stdlib.utils.randomwordgenerator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="randomwordgenerator-py">
+<h3>randomwordgenerator.py<a class="headerlink" href="#randomwordgenerator-py" title="Permalink to this headline">¶</a></h3>
+<p>The randomwordgenerator.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.randomwordgenerator.RandomWordGenerator">
+<em class="property">class </em><code class="descclassname">stdlib.utils.randomwordgenerator.</code><code class="descname">RandomWordGenerator</code><a class="reference internal" href="_modules/stdlib/utils/randomwordgenerator.html#RandomWordGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.randomwordgenerator.RandomWordGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="stdlib.utils.randomwordgenerator.RandomWordGenerator.ALPHABET">
+<code class="descname">ALPHABET</code><em class="property"> = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']</em><a class="headerlink" href="#stdlib.utils.randomwordgenerator.RandomWordGenerator.ALPHABET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_file">
+<em class="property">classmethod </em><code class="descname">generate_file</code><span class="sig-paren">(</span><em>filename: str</em>, <em>filepath: str</em>, <em>rows: int</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/randomwordgenerator.html#RandomWordGenerator.generate_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_int_list">
+<em class="property">classmethod </em><code class="descname">generate_int_list</code><span class="sig-paren">(</span><em>rows: int</em>, <em>int_size: int</em><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="_modules/stdlib/utils/randomwordgenerator.html#RandomWordGenerator.generate_int_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_int_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_word_list">
+<em class="property">classmethod </em><code class="descname">generate_word_list</code><span class="sig-paren">(</span><em>rows: int</em><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="_modules/stdlib/utils/randomwordgenerator.html#RandomWordGenerator.generate_word_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.randomwordgenerator.RandomWordGenerator.generate_word_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.recthv">
+<span id="stdlib-utils-recthv-module"></span><h2>stdlib.utils.recthv module<a class="headerlink" href="#module-stdlib.utils.recthv" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="recthv-py">
+<h3>recthv.py<a class="headerlink" href="#recthv-py" title="Permalink to this headline">¶</a></h3>
+<p>The recthv.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.recthv.RectHV">
+<em class="property">class </em><code class="descclassname">stdlib.utils.recthv.</code><code class="descname">RectHV</code><span class="sig-paren">(</span><em>xmin: float</em>, <em>ymin: float</em>, <em>xmax: float</em>, <em>ymax: float</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/recthv.html#RectHV"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.recthv.RectHV" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="stdlib.utils.recthv.RectHV.height">
+<code class="descname">height</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/stdlib/utils/recthv.html#RectHV.height"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.recthv.RectHV.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.recthv.RectHV.intersects">
+<code class="descname">intersects</code><span class="sig-paren">(</span><em>that</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/recthv.html#RectHV.intersects"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.recthv.RectHV.intersects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.recthv.RectHV.width">
+<code class="descname">width</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; float<a class="reference internal" href="_modules/stdlib/utils/recthv.html#RectHV.width"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.recthv.RectHV.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils.scanner">
+<span id="stdlib-utils-scanner-module"></span><h2>stdlib.utils.scanner module<a class="headerlink" href="#module-stdlib.utils.scanner" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scanner-py">
+<h3>scanner.py<a class="headerlink" href="#scanner-py" title="Permalink to this headline">¶</a></h3>
+<p>The scanner.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.utils.scanner.Scanner">
+<em class="property">class </em><code class="descclassname">stdlib.utils.scanner.</code><code class="descname">Scanner</code><span class="sig-paren">(</span><em>file=None</em>, <em>source=None</em>, <em>delim=None</em>, <em>force_regex=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the scanner, including open files if any.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.has_next">
+<code class="descname">has_next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.has_next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.has_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if there’s another token in the input.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.is_stdin">
+<code class="descname">is_stdin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.is_stdin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.is_stdin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if sys.stdin is being used as the input.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next">
+<code class="descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the next token in the input as a string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next_float">
+<code class="descname">next_float</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next_float"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the next token in the input as a float.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next_int">
+<code class="descname">next_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next_int"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the next token in the input as an int.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next_line">
+<code class="descname">next_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next_line"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the remaining of the current line as a string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next_token">
+<code class="descname">next_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next_token"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scans and returns the next token that matches the delimeter.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="stdlib.utils.scanner.Scanner.next_type">
+<code class="descname">next_type</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/utils/scanner.html#Scanner.next_type"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.utils.scanner.Scanner.next_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the next token in the input as a given type func.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stdlib.utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">stdlib</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="stdlib.html">stdlib package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.hexdump">stdlib.hexdump module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.matrices">stdlib.matrices module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">stdlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html">stdlib package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="stdlib.html">stdlib package</a><ul>
+      <li>Previous: <a href="stdlib.stdlib.html" title="previous chapter">stdlib.stdlib package</a></li>
+      <li>Next: <a href="modules.html" title="next chapter">stdlib</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jacob Longhurst <jacoblonghurst@gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/stdlib.utils.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,62 @@
+stdlib.stdlib package
+=====================
+
+Submodules
+----------
+
+stdlib.stdlib.binarysearch module
+---------------------------------
+
+.. automodule:: stdlib.stdlib.binarysearch
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdlib.stdlib.collections module
+--------------------------------
+
+.. automodule:: stdlib.stdlib.collections
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdlib.stdlib.complex module
+----------------------------
+
+.. automodule:: stdlib.stdlib.complex
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdlib.stdlib.singleton module
+------------------------------
+
+.. automodule:: stdlib.stdlib.singleton
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdlib.stdlib.stats module
+--------------------------
+
+.. automodule:: stdlib.stdlib.stats
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+stdlib.stdlib.stdin module
+--------------------------
+
+.. automodule:: stdlib.stdlib.stdin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: stdlib.stdlib
+    :members:
+    :undoc-members:
+    :show-inheritance:
