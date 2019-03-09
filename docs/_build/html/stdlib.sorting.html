@@ -1,0 +1,322 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>stdlib.sorting package &#8212; stdlib 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stdlib.stdlib package" href="stdlib.stdlib.html" />
+    <link rel="prev" title="stdlib.non_linear_ds package" href="stdlib.non_linear_ds.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="stdlib-sorting-package">
+<h1>stdlib.sorting package<a class="headerlink" href="#stdlib-sorting-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-stdlib.sorting.insertionx">
+<span id="stdlib-sorting-insertionx-module"></span><h2>stdlib.sorting.insertionx module<a class="headerlink" href="#module-stdlib.sorting.insertionx" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="insertionx-py">
+<h3>insertionx.py<a class="headerlink" href="#insertionx-py" title="Permalink to this headline">¶</a></h3>
+<p>The insertionx.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.sorting.insertionx.InsertionX">
+<em class="property">class </em><code class="descclassname">stdlib.sorting.insertionx.</code><code class="descname">InsertionX</code><a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="stdlib.sorting.insertionx.InsertionX.reverse_sort">
+<em class="property">classmethod </em><code class="descname">reverse_sort</code><span class="sig-paren">(</span><em>a: List[T]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX.reverse_sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX.reverse_sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reverse sort the provided iterable object
+:param a:
+:type a:
+:return:
+:rtype: List</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.insertionx.InsertionX.reverse_sort_sublist">
+<em class="property">classmethod </em><code class="descname">reverse_sort_sublist</code><span class="sig-paren">(</span><em>a: List[T], lo: int, hi: int</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX.reverse_sort_sublist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX.reverse_sort_sublist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.insertionx.InsertionX.show">
+<em class="property">classmethod </em><code class="descname">show</code><span class="sig-paren">(</span><em>a: List[Iterable[T_co]]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX.show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.insertionx.InsertionX.sort">
+<em class="property">classmethod </em><code class="descname">sort</code><span class="sig-paren">(</span><em>a: List[T]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX.sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX.sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort the provided iterable object in natural order
+:param a: the iterable object to be sorted
+:type a: iter
+:return: returns nothing, does the sorting on the given object
+:rtype: None</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.insertionx.InsertionX.sort_sublist">
+<em class="property">classmethod </em><code class="descname">sort_sublist</code><span class="sig-paren">(</span><em>a: List[T], lo: int, hi: int</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/insertionx.html#InsertionX.sort_sublist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.insertionx.InsertionX.sort_sublist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.sorting.merge">
+<span id="stdlib-sorting-merge-module"></span><h2>stdlib.sorting.merge module<a class="headerlink" href="#module-stdlib.sorting.merge" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="merge-py">
+<h3>merge.py<a class="headerlink" href="#merge-py" title="Permalink to this headline">¶</a></h3>
+<p>The merge.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.sorting.merge.Merge">
+<em class="property">class </em><code class="descclassname">stdlib.sorting.merge.</code><code class="descname">Merge</code><a class="reference internal" href="_modules/stdlib/sorting/merge.html#Merge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.merge.Merge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="stdlib.sorting.merge.Merge.index_sort">
+<em class="property">classmethod </em><code class="descname">index_sort</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/merge.html#Merge.index_sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.merge.Merge.index_sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an indexed sorted array
+:param a: list to be sorted
+:return: Returns an indexed sorted array</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.merge.Merge.is_sorted">
+<em class="property">classmethod </em><code class="descname">is_sorted</code><span class="sig-paren">(</span><em>a: list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/merge.html#Merge.is_sorted"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.merge.Merge.is_sorted" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.merge.Merge.sort">
+<em class="property">classmethod </em><code class="descname">sort</code><span class="sig-paren">(</span><em>a: list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/merge.html#Merge.sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.merge.Merge.sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Public sort method. Used to sort using Merge sort
+:param a: list to be sorted
+:return: Nothing</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.sorting.mergex">
+<span id="stdlib-sorting-mergex-module"></span><h2>stdlib.sorting.mergex module<a class="headerlink" href="#module-stdlib.sorting.mergex" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mergex-py">
+<h3>mergex.py<a class="headerlink" href="#mergex-py" title="Permalink to this headline">¶</a></h3>
+<p>The mergex.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.sorting.mergex.MergeX">
+<em class="property">class </em><code class="descclassname">stdlib.sorting.mergex.</code><code class="descname">MergeX</code><a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="stdlib.sorting.mergex.MergeX.CUTOFF">
+<code class="descname">CUTOFF</code><em class="property"> = 7</em><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.CUTOFF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.mergex.MergeX.insertion_sort">
+<em class="property">classmethod </em><code class="descname">insertion_sort</code><span class="sig-paren">(</span><em>a: List[_GenericAlias], lo: int, hi: int</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX.insertion_sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.insertion_sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.mergex.MergeX.is_sorted">
+<em class="property">classmethod </em><code class="descname">is_sorted</code><span class="sig-paren">(</span><em>a: List[_GenericAlias]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX.is_sorted"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.is_sorted" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.mergex.MergeX.merge">
+<em class="property">classmethod </em><code class="descname">merge</code><span class="sig-paren">(</span><em>src: List[_GenericAlias], dst: List[_GenericAlias], lo: int, mid: int, hi: int</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX.merge"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.merge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.mergex.MergeX.show">
+<em class="property">classmethod </em><code class="descname">show</code><span class="sig-paren">(</span><em>a: List[_GenericAlias]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX.show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.mergex.MergeX.sort">
+<em class="property">classmethod </em><code class="descname">sort</code><span class="sig-paren">(</span><em>a: List[_GenericAlias]</em><span class="sig-paren">)</span> &#x2192; None<a class="reference internal" href="_modules/stdlib/sorting/mergex.html#MergeX.sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.MergeX.sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="stdlib.sorting.mergex.main">
+<code class="descclassname">stdlib.sorting.mergex.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/mergex.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.mergex.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.sorting.quick3way">
+<span id="stdlib-sorting-quick3way-module"></span><h2>stdlib.sorting.quick3way module<a class="headerlink" href="#module-stdlib.sorting.quick3way" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quick3way-py">
+<h3>quick3way.py<a class="headerlink" href="#quick3way-py" title="Permalink to this headline">¶</a></h3>
+<p>The quick3way.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.sorting.quick3way.QuickSort3Way">
+<em class="property">class </em><code class="descclassname">stdlib.sorting.quick3way.</code><code class="descname">QuickSort3Way</code><a class="reference internal" href="_modules/stdlib/sorting/quick3way.html#QuickSort3Way"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quick3way.QuickSort3Way" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="stdlib.sorting.quick3way.QuickSort3Way.is_sorted">
+<em class="property">classmethod </em><code class="descname">is_sorted</code><span class="sig-paren">(</span><em>a: list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quick3way.html#QuickSort3Way.is_sorted"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quick3way.QuickSort3Way.is_sorted" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.quick3way.QuickSort3Way.sort">
+<em class="property">classmethod </em><code class="descname">sort</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quick3way.html#QuickSort3Way.sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quick3way.QuickSort3Way.sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.sorting.quickx">
+<span id="stdlib-sorting-quickx-module"></span><h2>stdlib.sorting.quickx module<a class="headerlink" href="#module-stdlib.sorting.quickx" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quickx-py">
+<h3>quickx.py<a class="headerlink" href="#quickx-py" title="Permalink to this headline">¶</a></h3>
+<p>The quickx.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.sorting.quickx.QuickX">
+<em class="property">class </em><code class="descclassname">stdlib.sorting.quickx.</code><code class="descname">QuickX</code><a class="reference internal" href="_modules/stdlib/sorting/quickx.html#QuickX"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quickx.QuickX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="stdlib.sorting.quickx.QuickX.INSERTION_SORT_CUTOFF">
+<code class="descname">INSERTION_SORT_CUTOFF</code><em class="property"> = 8</em><a class="headerlink" href="#stdlib.sorting.quickx.QuickX.INSERTION_SORT_CUTOFF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.quickx.QuickX.reverse_sort">
+<em class="property">classmethod </em><code class="descname">reverse_sort</code><span class="sig-paren">(</span><em>a: List[_GenericAlias]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quickx.html#QuickX.reverse_sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quickx.QuickX.reverse_sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.quickx.QuickX.show">
+<em class="property">classmethod </em><code class="descname">show</code><span class="sig-paren">(</span><em>a: List[_GenericAlias], ascending_order=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quickx.html#QuickX.show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quickx.QuickX.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="stdlib.sorting.quickx.QuickX.sort">
+<em class="property">classmethod </em><code class="descname">sort</code><span class="sig-paren">(</span><em>a: List[_GenericAlias]</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quickx.html#QuickX.sort"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quickx.QuickX.sort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="stdlib.sorting.quickx.main">
+<code class="descclassname">stdlib.sorting.quickx.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/stdlib/sorting/quickx.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.sorting.quickx.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.sorting">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stdlib.sorting" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">stdlib</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="stdlib.html">stdlib package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.hexdump">stdlib.hexdump module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.matrices">stdlib.matrices module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">stdlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html">stdlib package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="stdlib.html">stdlib package</a><ul>
+      <li>Previous: <a href="stdlib.non_linear_ds.html" title="previous chapter">stdlib.non_linear_ds package</a></li>
+      <li>Next: <a href="stdlib.stdlib.html" title="next chapter">stdlib.stdlib package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jacob Longhurst <jacoblonghurst@gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/stdlib.sorting.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

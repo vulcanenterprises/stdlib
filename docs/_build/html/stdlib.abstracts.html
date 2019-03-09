@@ -1,0 +1,248 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>stdlib.abstracts package &#8212; stdlib 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stdlib.excepts package" href="stdlib.excepts.html" />
+    <link rel="prev" title="stdlib package" href="stdlib.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="stdlib-abstracts-package">
+<h1>stdlib.abstracts package<a class="headerlink" href="#stdlib-abstracts-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-abstractcollection-module">
+<h2>stdlib.abstracts.abstractcollection module<a class="headerlink" href="#stdlib-abstracts-abstractcollection-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-abstractmap-module">
+<h2>stdlib.abstracts.abstractmap module<a class="headerlink" href="#stdlib-abstracts-abstractmap-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-abstractset-module">
+<h2>stdlib.abstracts.abstractset module<a class="headerlink" href="#stdlib-abstracts-abstractset-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-collection-module">
+<h2>stdlib.abstracts.collection module<a class="headerlink" href="#stdlib-abstracts-collection-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-stdlib.abstracts.comparable">
+<span id="stdlib-abstracts-comparable-module"></span><h2>stdlib.abstracts.comparable module<a class="headerlink" href="#module-stdlib.abstracts.comparable" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comparable-py">
+<h3>comparable.py<a class="headerlink" href="#comparable-py" title="Permalink to this headline">¶</a></h3>
+<p>The comparable.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.abstracts.comparable.Comparable">
+<em class="property">class </em><code class="descclassname">stdlib.abstracts.comparable.</code><code class="descname">Comparable</code><a class="reference internal" href="_modules/stdlib/abstracts/comparable.html#Comparable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.comparable.Comparable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Abstract interface for comparing objects. Similar to javas Comparable interface</p>
+<dl class="method">
+<dt id="stdlib.abstracts.comparable.Comparable.compare_to">
+<code class="descname">compare_to</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/stdlib/abstracts/comparable.html#Comparable.compare_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.comparable.Comparable.compare_to" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.abstracts.comparator">
+<span id="stdlib-abstracts-comparator-module"></span><h2>stdlib.abstracts.comparator module<a class="headerlink" href="#module-stdlib.abstracts.comparator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comparator-py">
+<h3>comparator.py<a class="headerlink" href="#comparator-py" title="Permalink to this headline">¶</a></h3>
+<p>The comparator.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.abstracts.comparator.Comparator">
+<em class="property">class </em><code class="descclassname">stdlib.abstracts.comparator.</code><code class="descname">Comparator</code><a class="reference internal" href="_modules/stdlib/abstracts/comparator.html#Comparator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.comparator.Comparator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="method">
+<dt id="stdlib.abstracts.comparator.Comparator.compare">
+<code class="descname">compare</code><span class="sig-paren">(</span><em>o1: Generic</em>, <em>o2: Generic</em><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/stdlib/abstracts/comparator.html#Comparator.compare"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.comparator.Comparator.compare" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.abstracts.iterable">
+<span id="stdlib-abstracts-iterable-module"></span><h2>stdlib.abstracts.iterable module<a class="headerlink" href="#module-stdlib.abstracts.iterable" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="iterable-py">
+<h3>iterable.py<a class="headerlink" href="#iterable-py" title="Permalink to this headline">¶</a></h3>
+<p>The iterable.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.abstracts.iterable.Iterable">
+<em class="property">class </em><code class="descclassname">stdlib.abstracts.iterable.</code><code class="descname">Iterable</code><a class="reference internal" href="_modules/stdlib/abstracts/iterable.html#Iterable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.iterable.Iterable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.abstracts.iterator">
+<span id="stdlib-abstracts-iterator-module"></span><h2>stdlib.abstracts.iterator module<a class="headerlink" href="#module-stdlib.abstracts.iterator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="iterator-py">
+<h3>iterator.py<a class="headerlink" href="#iterator-py" title="Permalink to this headline">¶</a></h3>
+<p>The iterator.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.abstracts.iterator.Iterator">
+<em class="property">class </em><code class="descclassname">stdlib.abstracts.iterator.</code><code class="descname">Iterator</code><a class="reference internal" href="_modules/stdlib/abstracts/iterator.html#Iterator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.iterator.Iterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="stdlib-abstracts-map-module">
+<h2>stdlib.abstracts.map module<a class="headerlink" href="#stdlib-abstracts-map-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-navigablemap-module">
+<h2>stdlib.abstracts.navigablemap module<a class="headerlink" href="#stdlib-abstracts-navigablemap-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stdlib-abstracts-sortedmap-module">
+<h2>stdlib.abstracts.sortedmap module<a class="headerlink" href="#stdlib-abstracts-sortedmap-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-stdlib.abstracts.transparency">
+<span id="stdlib-abstracts-transparency-module"></span><h2>stdlib.abstracts.transparency module<a class="headerlink" href="#module-stdlib.abstracts.transparency" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="transparency-py">
+<h3>transparency.py<a class="headerlink" href="#transparency-py" title="Permalink to this headline">¶</a></h3>
+<p>The transparency.py module for python stdlib</p>
+<dl class="class">
+<dt id="stdlib.abstracts.transparency.Transparency">
+<em class="property">class </em><code class="descclassname">stdlib.abstracts.transparency.</code><code class="descname">Transparency</code><a class="reference internal" href="_modules/stdlib/abstracts/transparency.html#Transparency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.transparency.Transparency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="attribute">
+<dt id="stdlib.abstracts.transparency.Transparency.BITMASK">
+<code class="descname">BITMASK</code><em class="property"> = 2</em><a class="headerlink" href="#stdlib.abstracts.transparency.Transparency.BITMASK" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="stdlib.abstracts.transparency.Transparency.OPAQUE">
+<code class="descname">OPAQUE</code><em class="property"> = 1</em><a class="headerlink" href="#stdlib.abstracts.transparency.Transparency.OPAQUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="stdlib.abstracts.transparency.Transparency.TRANSLUCENT">
+<code class="descname">TRANSLUCENT</code><em class="property"> = 3</em><a class="headerlink" href="#stdlib.abstracts.transparency.Transparency.TRANSLUCENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="stdlib.abstracts.transparency.Transparency.get_transparency">
+<code class="descname">get_transparency</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="reference internal" href="_modules/stdlib/abstracts/transparency.html#Transparency.get_transparency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#stdlib.abstracts.transparency.Transparency.get_transparency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="module-stdlib.abstracts">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-stdlib.abstracts" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">stdlib</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="stdlib.html">stdlib package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.hexdump">stdlib.hexdump module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib.matrices">stdlib.matrices module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stdlib.html#module-stdlib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">stdlib</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="stdlib.html">stdlib package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="stdlib.html">stdlib package</a><ul>
+      <li>Previous: <a href="stdlib.html" title="previous chapter">stdlib package</a></li>
+      <li>Next: <a href="stdlib.excepts.html" title="next chapter">stdlib.excepts package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Jacob Longhurst <jacoblonghurst@gmail.com>.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/stdlib.abstracts.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
